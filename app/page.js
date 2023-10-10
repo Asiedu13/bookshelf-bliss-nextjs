@@ -1,6 +1,8 @@
-import React from 'react'
-import CardMini from './components/Cards/CardMini'
-import CalendarMain from './components/Calendar/CalendarMain';
+import React from "react";
+import CardMini from "./components/Cards/CardMini";
+import CalendarMain from "./components/Calendar/CalendarMain";
+import Header from "./components/Header/Header";
+import Comment from "./components/Comment/Comment";
 
 const Home = () => {
   return (
@@ -38,7 +40,7 @@ const Home = () => {
             </h2>
 
             {/* {{-- Page details --}} */}
-            <div className="mNamet-[20px] mb-[40px]">
+            <div className="mt-[20px] mb-[40px]">
               <span className="text-[#1592e6] text-xl">154</span>
               <span className="text-xl">/ 500 pages</span>
             </div>
@@ -58,27 +60,42 @@ const Home = () => {
       </header>
 
       {/* {{-- Popular & Schedule reading --}} */}
-      <section className="flex border-gray border-2">
-        {/* {{-- Popular books section --}} */}
-        <section className="w-[55%]  h-[400px]">
-          <header>
-            <h2 className="text-2xl p-[1rem]">Popular Now</h2>
-          </header>
+      <section className="flex">
+        {/* Left section */}
+        <section className="flex-1 w-[900px]">
+          {/* {{-- Popular books section --}} */}
+          <section className="w-[100%] h-[400px]">
+            <Header title="Popular Now" />
 
-          {/* {{-- book cards --}} */}
-          <div class="flex justify-around">
-            <CardMini />
-            <CardMini />
-            <CardMini />
-            <CardMini />
-          </div>
+            {/* {{-- book cards --}} */}
+            <div class="flex justify-around">
+              <CardMini />
+              <CardMini />
+              <CardMini />
+              <CardMini />
+            </div>
+          </section>
+
+          {/* New Series Collection */}
+          {/* <section></section> */}
         </section>
-        {/* Schedule reading section */}
-        <section className="flex flex-1 flex-col p-[1rem] ">
-          <CalendarMain />
+
+        {/* Right section */}
+        <section>
+          {/* Schedule reading section */}
+          <section className="flex flex-col p-[1rem] ">
+            <CalendarMain />
+          </section>
+          {/* Reader Friends or Trending book comments */}
+          <section className="pl-[30px] w-[600px]">
+            <Header title="Reader Friends" />
+            <Comment />
+            <Comment />
+            <Comment />
+          </section>
         </section>
       </section>
     </main>
   );
-}
-export default Home
+};
+export default Home;
