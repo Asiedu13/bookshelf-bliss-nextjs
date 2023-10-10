@@ -1,113 +1,125 @@
-import Image from 'next/image'
+import React from 'react'
 
-export default function Home() {
+const Home = () => {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.js</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
+    <div className=''>
+      <main class="p-[40px] w-[100vw] h-[100vh] text-[#252733]">
 
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+            {/* top section */}
+            <section class=" flex justify-between">
+                 {/* Search */}
+                <div class="flex w-[280px] justify-around items-center">
+                    <svg class="w-[20px] h-[20px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M500.3 443.7l-119.7-119.7c27.22-40.41 40.65-90.9 33.46-144.7C401.8 87.79 326.8 13.32 235.2 1.723C99.01-15.51-15.51 99.01 1.724 235.2c11.6 91.64 86.08 166.7 177.6 178.9c53.8 7.189 104.3-6.236 144.7-33.46l119.7 119.7c15.62 15.62 40.95 15.62 56.57 0C515.9 484.7 515.9 459.3 500.3 443.7zM79.1 208c0-70.58 57.42-128 128-128s128 57.42 128 128c0 70.58-57.42 128-128 128S79.1 278.6 79.1 208z"/></svg>
+                    <input type="text" placeholder="Search book name, author, edition ..." class="p-[5px] text-sm w-[250px] rounded-2xl bg-[#f0eee2] outline-none " />
+                </div>
+                {/* profile */}
 
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
+                <div class="w-[280px] flex justify-between items-center mr-[30px]">
+                    <div class="flex justify-start items-center">
+                        <img src="/media/imgs/book1.jpg" class="w-[50px] h-[50px] rounded-full mr-[10px] shadow-2xl" alt="user profile image" />
+                        <p>Asem Felix</p>
+                    </div>
+                    {/* Notifications  */}
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800 hover:dark:bg-opacity-30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
+                    <div class="w-[100px] h-[50px] flex items-center justify-end">
+                        <svg class="w-[30px] h-[30px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M256 32V51.2C329 66.03 384 130.6 384 208V226.8C384 273.9 401.3 319.2 432.5 354.4L439.9 362.7C448.3 372.2 450.4 385.6 445.2 397.1C440 408.6 428.6 416 416 416H32C19.4 416 7.971 408.6 2.809 397.1C-2.353 385.6-.2883 372.2 8.084 362.7L15.5 354.4C46.74 319.2 64 273.9 64 226.8V208C64 130.6 118.1 66.03 192 51.2V32C192 14.33 206.3 0 224 0C241.7 0 256 14.33 256 32H256zM224 512C207 512 190.7 505.3 178.7 493.3C166.7 481.3 160 464.1 160 448H288C288 464.1 281.3 481.3 269.3 493.3C257.3 505.3 240.1 512 224 512z"/></svg>
+                    </div>
+                </div>
+                
+            </section>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore the Next.js 13 playground.
-          </p>
-        </a>
+            <header class="flex justify-between mt-[2rem] h-[350px] ">
+                 {/* Main */}
+                <section class="w-[400px] h-[inherit]">
+                    <h1 class="text-6xl">
+                        Happy reading, Felix
+                    </h1>
+                    <p class="mt-[2rem] mb-[4rem]">Wow! You've delved deep into the dragon world's secrets. Have Violet's dragons shown up yet? Oops! looks like you're not there yet. Get reading now!
+                    </p>
 
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+                    <a href='#' class="bg-[black] text-[white] py-[.8rem] px-[2rem] rounded-3xl">Keep reading</a>
+                </section>
+
+                {/* {{-- Trending book profile  */}
+                <section class="flex justify-between w-[750px] h-[inherit]">
+                    <img src="/media/imgs/book3.jpg" alt="trending book" class="h-[90%] w-[240px] shadow-2xl rounded" />
+                    {/* {{-- Book profile description --}} */}
+                    <div class="w-[55%]">
+                        {/* {{-- Title --}} */}
+                        <h2 class="text-4xl w-[90%] font-semibold my-[10px]">Fourth Wing: The Empyrean</h2>
+
+                        {/* {{-- Page details --}} */}
+                        <div class="mt-[20px] mb-[40px]">
+                            <span class="text-[#1592e6] text-xl">154</span>
+                            <span class="text-xl" >/ 500 pages</span>
+                        </div>
+                        {/* {{-- Quote --}} */}
+                        <div class="mt-[20px] h-[160px] flex flex-col justify-between">
+                            <p>Yet, with everyday that passes, the war outside grows more deadly, the kingdom's protective wards are failing, and the death... </p>
+                            <div class="mt-[20px] text-right p-[2rem] ">
+
+                                <strong >~ Rebecca Yarros</strong>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </header>
+
+
+            {/* {{-- Popular & Schedule reading --}} */}
+            <section class="flex">
+            {/* {{-- Popular books section --}} */}
+                <section class="w-[55%]  h-[400px]">
+                    <header>
+                        <h2 class="text-2xl p-[1rem]">Popular Now</h2>
+                    </header>
+
+                {/* {{-- book cards --}} */}
+                    <div class="flex justify-around">
+                        <article>
+                        {/* {{-- Book Image --}} */}
+                            <img src="/media/imgs/book1.jpg" alt="book title" class="w- [150px] h-[240px] rounded-xl my-[20px] shadow-2xl" />
+                        {/* Book description  */}
+                            <div class="flex flex-col w-[150px] h-[50px] overflow-hidden">
+                                <b>The world of Ice and Fire</b>
+                                <i>Volume I</i>
+                            </div>
+                        </article>
+
+                        <article>
+                        {/* Book Image */}
+                            <img src="/media/imgs/book2.jpg" alt="book title" class="w-[150px] h-[240px] rounded-xl my-[20px] shadow-2xl" />
+                         {/* Book description  */}
+                            <div class="flex flex-col w-[150px] h-[50px] overflow-hidden">
+                                <b>Fantastic Beasts</b>
+                                <i>Volume II</i>
+                            </div>
+                        </article>
+
+                        <article>
+                        {/* Book Image */}
+                            <img src="/media/imgs/book4.jpg" alt="book title" class="w-[150px] h-[240px] rounded-xl my-[20px] shadow-2xl" />
+                        {/* Book description */}
+                            <div class="flex flex-col w-[150px] h-[50px] overflow-hidden">
+                                <b>Game of Thrones</b>
+                                <i>Volume III</i>
+                            </div>
+                        </article>
+
+                        <article>
+                        {/* Book Image  */}
+                            <img src="/media/imgs/book5.jpg" alt="book title" class="w-[150px] h-[240px] rounded-xl my-[20px] shadow-2xl" />
+                         {/* Book description */}
+                            <div class="flex flex-col w-[150px] h-[50px] overflow-hidden">
+                                <b>The Wise Man's Fear</b>
+                                <i>Volume I</i>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+            </section>
+        </main>
+    </div>
   )
 }
+export default Home
