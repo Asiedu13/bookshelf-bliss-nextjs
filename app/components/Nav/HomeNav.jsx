@@ -26,14 +26,14 @@ export const HomeNav = () => {
             <div class="flex justify-start items-center">
               <img
                 src="/media/imgs/book1.jpg"
-                class="w-[50px] h-[50px] rounded-full mr-[10px] shadow-2xl"
+                className="w-[50px] h-[50px] rounded-full mr-[10px] shadow-2xl"
                 alt="user profile image"
               />
               <p>Asem Felix</p>
             </div>
             {/* Notifications  */}
 
-            <div class="w-[100px] h-[50px] flex items-center justify-end">
+            <div className="w-[100px] h-[50px] flex items-center justify-end">
               <svg
                 class="w-[30px] h-[30px]"
                 xmlns="http://www.w3.org/2000/svg"
