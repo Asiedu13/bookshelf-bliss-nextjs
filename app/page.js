@@ -3,7 +3,6 @@ import CardMini from './components/Cards/CardMini'
 
 const Home = () => {
   return (
-    <div className="">
       <main class="p-[40px] w-[100vw] h-[100vh] text-[#252733]">
         <header class="flex justify-between mt-[2rem] h-[350px] ">
           {/* Main */}
@@ -75,7 +74,6 @@ const Home = () => {
           </section>
         </section>
       </main>
-    </div>
   );
 }
 export default Home
