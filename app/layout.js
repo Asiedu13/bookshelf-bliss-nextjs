@@ -15,7 +15,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
         {/* beige and white partitioned background */}
-        <span className="bg-[#FBFBF3] w-[45vw] h-[100vh]  fixed right-0 border-2 border-solid border-gray -z-10"></span>
+        <span className="bg-[#FBFBF3] w-[45vw] h-[100vh] fixed right-0  -z-10"></span>
         <span className="bg-[#F0EEE2] w-[55vw] h-[100vh] fixed -z-10 "></span>
         <div className="px-8 py-4">
           <HomeNav />
