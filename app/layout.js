@@ -11,7 +11,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        {/* beige and white partitioned background */}
+        <span class="bg-[white] w-[45vw] h-[100vh] -z-10 fixed border-2 border-solid border-[blue]"></span>
+        <span class="bg-[#f0eee2] w-[55vw] h-[100vh] fixed -z-10 "></span>
+        {children}
+      </body>
     </html>
-  )
+  );
 }
