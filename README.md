@@ -1,36 +1,105 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# BookshelfBliss v1.0
 
-## Getting Started
 
-First, run the development server:
+Expand your knowledge bank with the best book service platform on the internet. All genres of books and a system that keeps you, your books and everyone else connected. 
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## Table of contents
+
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
+- [Acknowledgments](#acknowledgments)
+- [API(s) used](#apis-used)
+
+## Overview
+An application that connects you with the stories you resonate with
+### The challenge
+
+Users should be able to:
+
+- Find books.
+- Read and bookmark
+- Receive insights from authors and other readers
+
+### Screenshot
+
+![The Solution](./public/bookshelf-snap.png)
+
+### Links
+
+<!-- - Solution URL: [Github Link (currently private)](https://github.com/Asiedu13/weather-app)
+- Live Site URL: [Weather App](https://weather-app-asiedu13.vercel.app/) -->
+
+## My process
+### Selecting the Tools / Technologies
+I decided to use Next.js because of the new features   Next.js gives to a React application.
+
+### Planning the Layouts
+I then took the time to consider the various views and UI components that would be needed for the application.
+
+### Building the Views 
+I then wrote code for everything planned and still planning
+### Built with
+
+- Next.js
+- Tailwindcss
+- Flexbox
+- fontawesome
+
+## What I learned
+
+This project helped me learn about the various features of Next. From file based routing to all the optimizations Next undertakes to keep the application fast at all levels.
+
+This project also allowed me to
+- learn about caching techniques such as local storage
+- working with APIs to achieve a goal
+- implement tailwindcss in a Next app
+
+
+
+```html
+ <section className="w-[fit-content] h-1/2">
+              <section className='py-4'>
+                <h1 className='text-7xl font-bold pb-5 '> {city}, {country_code}</h1>
+                <p> {today}</p>
+                </section>
+ <section />
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Continued development
+<!-- Further on in this project, I would like to
+- Access to location data o
+- Keep a list favourite locations
+- Provide more information on the weather of a location
+- Important world events that ocurred with specific weather conditions -->
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Useful resources
 
-## Learn More
+<!-- - [Tailwind official docs](https://tailwindcss.com/docs/installation) - This helped me with using tailwindcss for the project. I really liked the simplicity and the ctrl + K shortcut for searching. -->
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+**However, I am open to alternatives so reach out to me if you have any.**
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+## Author
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Website - [Asiedu Prince Kofi](Asiedu13.github.io)
+- Github - [@Asiedu13](https://github.com/Asiedu13)
+- Twitter - [@Prince_KAsiedu](https://www.twitter.com/Prince_KAsiedu)
+- LinkedIn - [@Prince Asiedu](https://www.linkedin.com/in/princek-asiedu/)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## Acknowledgments
+
+<!-- https://stackabuse.com/guide-to-getting-started-with-nextjs-create-a-nextjs-app/ -->
+
+### API(s) Used
+<!-- [RapidAPI Weather API](https://rapidapi.com/weatherapi/api/weatherapi-com) -->
